@@ -1,16 +1,25 @@
 .navbar {
     min-height: 3.25rem;
-    background: #0F2F45;
+    background: #EEEEEE;
 }
 
 a.navbar-item,
 a.navbar-item,
 a.navbar-link {
     background-color: transparent;
-    color: #FFFFFF;
+    color: #000000;
 }
 
 a.navbar-link.is-active:not(:hover) {
     background-color: transparent;
     color: #FFFFFF;
+}
+
+.footer-section {
+	height: 100px;
+}
+
+div.column.home-columns {
+	height: 300px;
+	text-align: center;
 }
