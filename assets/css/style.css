@@ -23,3 +23,23 @@ div.column.home-columns {
 	height: 300px;
 	text-align: center;
 }
+
+.go{
+    padding-top: 30px !important;
+    display: -webkit-box !important;
+    position: absolute !important;
+    z-index: 1 !important;
+}
+
+#map {
+    width: 127% !important;
+    height: 100vh !important;
+    margin-left: -13.5% !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.navbar-item img {
+    max-height: 86px;
+    margin: -15px;
+}

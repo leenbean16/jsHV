@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HOME VENUES</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+
+<body onload="initialize()">
+	<!-- map search -->
+    <div class="go">
+        <input id="address" type="textbox" value="San Diego, CA">
+        <input id="goAddress" type="button" value="Encode" onclick="codeAddress()">
+    </div>
+    <!-- map -->
+    <div id="map" style="width: 320px; height: 480px;"></div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwbfqUd3fzJinZ8f8NL551msianIwqGZY&callback=initMap">
+    </script>
+    </div>
+    <!-- js file location -->
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>
