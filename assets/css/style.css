@@ -28,20 +28,22 @@ div.column.home-columns {
 	text-align: center;
 	padding-top: 25px;
 	background: #dbd3c5;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 .home-columns {
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
+    margin-top: 25px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
-.go{
+.go {
     padding-top: 30px !important;
     display: -webkit-box !important;
     position: absolute !important;
     z-index: 1 !important;
+    padding-left: 50px;
 }
 
 #map {
@@ -71,15 +73,16 @@ div.column.home-columns {
     height: 200px;
     opacity: 0.5;
     width: 104%;
-    margin-left: -25px;
-    padding-left: 10px;
-    padding-top: 25px;
-    font-family: 'Contrail One', cursive;
+    margin-left: -27px;
+    padding-left: 67px;
+    padding-top: 30px;
+    font-size: 20px;
+    font-family: 'Amaranth', sans-serif;
     margin-top: -25px;
 }
 
-.title {
-	font-family: 'Contrail One', cursive;
+h1.title {
+	font-family: 'Lobster', cursive;
 }
 
 .title:not(.is-spaced)+.subtitle {
@@ -89,4 +92,61 @@ div.column.home-columns {
 
 .subtitle {
 	color: #000000;
+}
+
+#address {
+    height: 36px;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 25px;
+    box-shadow: none;
+}
+
+.button {
+    font-family: 'Amaranth', sans-serif;
+    font-size: 25px;
+    height: 37px;
+    padding-bottom: 35px;
+    padding-top: 0px;
+}
+
+.home-icon {
+    color: #000000;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#add-listing-form {
+    width: 65%;
+    align-items: flex-start;
+    margin: 25px;
+}
+
+.amenity-checkbox {
+    display: inline-table;
+    }
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.amenity-check {
+        margin-right: 20px;
+}
+
+.login-form {
+    display: block;
+    width: 20%;
+    align-items: center;
+    margin: 100px auto;
+    border: 1px solid #e3e3e3;
+    padding: 125px 25px;
+}
+
+.button.is-success {
+    background-color: black;
+    border-color: transparent;
+    color: #fff;
 }
