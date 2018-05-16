@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Venues</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+</head>
+
+<body>
+    <!-- page body -->
+    <!-- navbar -->
+    <nav class="navbar ">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <img src="./assets/imgs/hv.png" class="logo-pic" /></a>
+            <a class="navbar-item is-hidden-desktop" href="https://github.com/leenbean16" target="_blank">
+      <span class="icon" style="color: #333;">
+        <i class="fa fa-github"></i>
+      </span>
+    </a>
+            <a class="navbar-item is-hidden-desktop" href="https://twitter.com/linashamoon" target="_blank">
+      <span class="icon" style="color: #55acee;">
+        <i class="fa fa-twitter"></i>
+      </span>
+    </a>
+            <div class="navbar-burger burger" data-target="navMenubd-example">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div id="navMenubd-example" class="navbar-menu">
+            <div class="navbar-start">
+                <div class="navbar-item">
+                    <a class="navbar-item" href="./index.html">Home</a>
+                    <a class="navbar-item" href="./addListing.html">Add a Listing</a>
+                    <a class="navbar-item" href="./findVenue.html">Find a Venue</a>
+                    <a class="navbar-item" href="./account.html">Account</a>
+                    <a class="navbar-item" href="./loginFormSignUpForm.html">Login/Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="add-listing-form" class="container">
+        <p class="add-a-listing-title"><b>Add a Listing</b></p>
+        <br>
+        <div class="field">
+            <label class="label">Address</label>
+            <div class="control has-icons-left has-icons-right">
+                <input class="input" type="text" placeholder="Address">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Address 2</label>
+            <div class="control has-icons-left has-icons-right">
+                <input class="input" type="text" placeholder="Address 2">
+                <span class="icon is-small is-left"></span>
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">City</label>
+            <div class="control has-icons-left has-icons-right">
+                <input class="input" type="text" placeholder="City">
+                <span class="icon is-small is-left"></span>
+            </div>
+        </div>
+        <br>
+        <div class="field">
+            <label class="label">State</label>
+            <div class="select is-multiple">
+                <select multiple size="5">
+                    <option value="Choose State"><strong>Choose State</strong></option>
+                    <option value="Alabama">Alabama</option>
+                    <option value="Alaska">Alaska</option>
+                    <option value="Arizona">Arizona</option>
+                    <option value="Arkansas">Arkansas</option>
+                    <option value="California">California</option>
+                    <option value="Colorado">Colorado</option>
+                    <option value="Connecticut">Connecticut</option>
+                    <option value="Delaware">Delaware</option>
+                    <option value="Florida">Florida</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Hawaii">Hawaii</option>
+                    <option value="Idaho">Idaho</option>
+                    <option value="Illinois">Illinois</option>
+                    <option value="Indiana">Indiana</option>
+                    <option value="Iowa">Iowa</option>
+                    <option value="Kansas">Kansas</option>
+                    <option value="Kentucky">Kentucky</option>
+                    <option value="Louisiana">Louisiana</option>
+                    <option value="Maine">Maine</option>
+                    <option value="Maryland">Maryland</option>
+                    <option value="Massachusetts">Massachusetts</option>
+                    <option value="Michigan">Michigan</option>
+                    <option value="Minnesota">Minnesota</option>
+                    <option value="Mississippi">Mississippi</option>
+                    <option value="Missouri">Missouri</option>
+                    <option value="Montana">Montana</option>
+                    <option value="Nebraska">Nebraska</option>
+                    <option value="Nevada">Nevada</option>
+                    <option value="New">New Hampshire</option>
+                    <option value="New">New Jersey</option>
+                    <option value="New">New Mexico</option>
+                    <option value="New">New York</option>
+                    <option value="North">North Carolina</option>
+                    <option value="North">North Dakota</option>
+                    <option value="Ohio">Ohio</option>
+                    <option value="Oklahoma">Oklahoma</option>
+                    <option value="Oregon">Oregon</option>
+                    <option value="Pennsylvania">Pennsylvania</option>
+                    <option value="Rhode">Rhode Island</option>
+                    <option value="South">South Carolina</option>
+                    <option value="South">South Dakota</option>
+                    <option value="Tennessee">Tennessee</option>
+                    <option value="Texas">Texas</option>
+                    <option value="Utah">Utah</option>
+                    <option value="Vermont">Vermont</option>
+                    <option value="Virginia">Virginia</option>
+                    <option value="Washington">Washington</option>
+                    <option value="West">West Virginia</option>
+                    <option value="Wisconsin">Wisconsin</option>
+                    <option value="Wyoming">Wyoming</option>
+                </select>
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Zip</label>
+            <div class="control has-icons-left has-icons-right">
+                <input class="input" type="text" placeholder="Zip">
+                <span class="icon is-small is-left"></span>
+            </div>
+        </div>
+        <br>
+        <!-- Amenities -->
+        <p class="title-for-amenities-list"><b>Amenities Offered:</b></p>
+        <div class="flex-container">
+            <div class="field amenity-check">
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox">Bar</label>
+                </div>
+            </div>
+            <div class="field amenity-check">
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox">Bathroom</label>
+                </div>
+            </div>
+            <div class="field amenity-check">
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox">Catering</label>
+                </div>
+            </div>
+            <div class="field amenity-check">
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox">Changing Room</label>
+                </div>
+            </div>
+            <div class="field amenity-check">
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox">Dance Floor</label>
+                </div>
+            </div>
+            <div class="field amenity-check">
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox">Decor</label>
+                </div>
+            </div>
+            <div class="field amenity-check">
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox">Entertainment</label>
+                </div>
+            </div>
+            <div class="field amenity-check">
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox">Fire Pit</label>
+                </div>
+            </div>
+            <div class="field amenity-check">
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox">Florist</label>
+                </div>
+            </div>
+            <div class="field amenity-check">
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox">Hospitality</label>
+                </div>
+            </div>
+            <div class="field amenity-check">
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox">Kitchen</label>
+                </div>
+            </div>
+            <div class="field amenity-check">
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox">Master Of Ceremony</label>
+                </div>
+            </div>
+            <div class="field amenity-check">
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox">DJ</label>
+                </div>
+            </div>
+            <div class="field amenity-check">
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox">Live Band</label>
+                </div>
+            </div>
+            <div class="field amenity-check">
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox">Parking</label>
+                </div>
+            </div>
+            <div class="field amenity-check">
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox">Photo Booth</label>
+                </div>
+            </div>
+            <div class="field amenity-check">
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox">Photographer</label>
+                </div>
+            </div>
+            <div class="field amenity-check">
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox">Pool</label>
+                </div>
+            </div>
+            <div class="field amenity-check">
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox">Tables And Chairs</label>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- Amenities End -->
+        <p class="title-for-amenities-list"><b>Upload an Image of your Venue</b></p>
+        <div class="file">
+            <label class="file-label">
+                <input class="file-input" type="file" name="listing">
+                <span class="file-cta">
+                    <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                    </span>
+                <span class="file-label">File...</span>
+                </span>
+            </label>
+        </div>
+        <br>
+        <div class="field">
+            <div class="control">
+                <label class="checkbox">
+                    <input type="checkbox"> I agree to the <a href="#">terms and conditions</a>
+                </label>
+            </div>
+        </div>
+        <div class="field is-grouped">
+            <div class="control">
+                <button class="button is-link">Submit</button>
+            </div>
+            <div class="control">
+                <button class="button is-text">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <section class="footer footer-section is-primary">
+        <p class="copyright">Home Venues 2018</p>
+    </section>
+    <!-- js file location -->
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
