@@ -1,6 +1,6 @@
 module.exports = function(sequelize) {
 
-    const loginModel = sequelize.define("loginModel", {
+    const signUpModel = sequelize.define("signUpModel", {
         email: {
             type: STRING,
             allowNull: false,
@@ -23,5 +23,5 @@ module.exports = function(sequelize) {
         },
     );
     
-    return loginModel;
+    return signUpModel;
 };

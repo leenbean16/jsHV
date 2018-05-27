@@ -1,0 +1,32 @@
+{
+  "name": "jshv",
+  "version": "1.0.0",
+  "description": "rent home as venue",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongodb": "^3.1.0-beta4",
+    "mongojs": "^2.5.0",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.17.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leenbean16/jsHV.git"
+  },
+  "keywords": [
+    "home"
+  ],
+  "author": "ls",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leenbean16/jsHV/issues"
+  },
+  "homepage": "https://github.com/leenbean16/jsHV#readme"
+}
