@@ -1,5 +1,5 @@
-/* Note Taker (18.2.6)
- * backend
+/* Home Venues
+ * backend / server / routes
  * ==================== */
 
 // Dependencies
@@ -12,6 +12,7 @@ var app = express();
 
 // Set the app up with morgan, body-parser, and a static folder
 app.use(logger("dev"));
+app.use(morgan('combined'))
 app.use(bodyParser.urlencoded({
     extended: false
 }));
@@ -22,7 +23,11 @@ var databaseUrl = "home-venues";
 var collections = ['listings', 'users', 'bookings', 'signUp'];
 
 // Hook mongojs config to db variable
-var db = mongojs(databaseUrl, collections);
+// connect now, and worry about collections later
+var db = mongojs('mydb')
+var mycollection = db.collection('mycollection')
+
+console.log(mycollection);
 
 // Log any mongojs errors to console
 db.on("error", function(error) {
@@ -35,14 +40,11 @@ db.on("error", function(error) {
 
 // Simple index route
 app.get("/", function(req, res) {
-    res.render(index);
-    console.log('index.html');
+
 });
 
 
-app.post("/submit", function(req, res) {
-    db.listingModel.insert({ address: 'Ed' });
-    res.redirect(index);
+app.post("/addListing", function(req, res) {
     console.log('added');
 });
 
