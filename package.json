@@ -12,7 +12,6 @@
     "morgan": "^1.9.0",
     "nodemon": "^1.17.4"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "test",
     "start": "node app.js"
