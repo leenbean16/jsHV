@@ -12,7 +12,6 @@ var app = express();
 
 // Set the app up with morgan, body-parser, and a static folder
 app.use(logger("dev"));
-app.use(morgan('combined'))
 app.use(bodyParser.urlencoded({
     extended: false
 }));
