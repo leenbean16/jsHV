@@ -47,245 +47,290 @@
             </div>
         </div>
     </nav>
-    <div id="add-listing-form" class="container">
-        <p class="add-a-listing-title"><b>Add a Listing</b></p>
-        <br>
-        <div class="field">
-            <label class="label">Address</label>
-            <div class="control has-icons-left has-icons-right">
-                <input id="address" class="address-input input" type="text" placeholder="Address">
-                <span class="icon is-small is-left"></span>
+    <div class="columns">
+        <div class="column">
+            <div id="add-listing-form" class="container">
+                <p class="add-a-listing-title"><b>Add a Listing</b></p>
+                <br>
+                <div class="field">
+                    <label class="label">Address</label>
+                    <div class="control has-icons-left has-icons-right">
+                        <input id="address" class="address-input input" type="text" placeholder="Address">
+                        <span class="icon is-small is-left"></span>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Address 2</label>
+                    <div class="control has-icons-left has-icons-right">
+                        <input id="address-two" class="address-two-input input" type="text" placeholder="Address 2">
+                        <span class="icon is-small is-left"></span>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">City</label>
+                    <div class="control has-icons-left has-icons-right">
+                        <input id="city" class="city-input input" type="text" placeholder="City">
+                        <span class="icon is-small is-left"></span>
+                    </div>
+                </div>
+                <br>
+                <div class="field">
+                    <label class="label">State</label>
+                    <div class="select is-multiple">
+                        <select id="state" multiple size="5">
+                            <option value="Alabama">Alabama</option>
+                            <option value="Alaska">Alaska</option>
+                            <option value="Arizona">Arizona</option>
+                            <option value="Arkansas">Arkansas</option>
+                            <option value="California">California</option>
+                            <option value="Colorado">Colorado</option>
+                            <option value="Connecticut">Connecticut</option>
+                            <option value="Delaware">Delaware</option>
+                            <option value="Florida">Florida</option>
+                            <option value="Georgia">Georgia</option>
+                            <option value="Hawaii">Hawaii</option>
+                            <option value="Idaho">Idaho</option>
+                            <option value="Illinois">Illinois</option>
+                            <option value="Indiana">Indiana</option>
+                            <option value="Iowa">Iowa</option>
+                            <option value="Kansas">Kansas</option>
+                            <option value="Kentucky">Kentucky</option>
+                            <option value="Louisiana">Louisiana</option>
+                            <option value="Maine">Maine</option>
+                            <option value="Maryland">Maryland</option>
+                            <option value="Massachusetts">Massachusetts</option>
+                            <option value="Michigan">Michigan</option>
+                            <option value="Minnesota">Minnesota</option>
+                            <option value="Mississippi">Mississippi</option>
+                            <option value="Missouri">Missouri</option>
+                            <option value="Montana">Montana</option>
+                            <option value="Nebraska">Nebraska</option>
+                            <option value="Nevada">Nevada</option>
+                            <option value="New">New Hampshire</option>
+                            <option value="New">New Jersey</option>
+                            <option value="New">New Mexico</option>
+                            <option value="New">New York</option>
+                            <option value="North">North Carolina</option>
+                            <option value="North">North Dakota</option>
+                            <option value="Ohio">Ohio</option>
+                            <option value="Oklahoma">Oklahoma</option>
+                            <option value="Oregon">Oregon</option>
+                            <option value="Pennsylvania">Pennsylvania</option>
+                            <option value="Rhode">Rhode Island</option>
+                            <option value="South">South Carolina</option>
+                            <option value="South">South Dakota</option>
+                            <option value="Tennessee">Tennessee</option>
+                            <option value="Texas">Texas</option>
+                            <option value="Utah">Utah</option>
+                            <option value="Vermont">Vermont</option>
+                            <option value="Virginia">Virginia</option>
+                            <option value="Washington">Washington</option>
+                            <option value="West">West Virginia</option>
+                            <option value="Wisconsin">Wisconsin</option>
+                            <option value="Wyoming">Wyoming</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Zip</label>
+                    <div class="control has-icons-left has-icons-right">
+                        <input id="zip" class="zip-input input" type="text" placeholder="Zip">
+                        <span class="icon is-small is-left"></span>
+                    </div>
+                </div>
+                <br>
             </div>
         </div>
-        <div class="field">
-            <label class="label">Address 2</label>
-            <div class="control has-icons-left has-icons-right">
-                <input id="address-two" class="address-two-input input" type="text" placeholder="Address 2">
-                <span class="icon is-small is-left"></span>
+        <div class="column amenity-column">
+            <!-- Amenities -->
+            <p class="title-for-amenities-list"><b>Amenities Offered:</b></p>
+            <div class="flex-container">
+                <ul class="amenity-list-list">
+                    <li>
+                        <div class="field amenity-check">
+                            <div class="control">
+                                <label class="checkbox">
+                                    <input id="bar" type="checkbox">Bar</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="field amenity-check">
+                            <div class="control">
+                                <label class="checkbox">
+                                    <input id="bathroom" type="checkbox">Bathroom</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="field amenity-check">
+                            <div class="control">
+                                <label class="checkbox">
+                                    <input id="catering" type="checkbox">Catering</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="field amenity-check">
+                            <div class="control">
+                                <label class="checkbox">
+                                    <input id="changingroom" type="checkbox">Changing Room</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="field amenity-check">
+                            <div class="control">
+                                <label class="checkbox">
+                                    <input id="dancefloor" type="checkbox">Dance Floor</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="field amenity-check">
+                            <div class="control">
+                                <label class="checkbox">
+                                    <input id="decor" type="checkbox">Decor</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="field amenity-check">
+                            <div class="control">
+                                <label class="checkbox">
+                                    <input id="entertainment" type="checkbox">Entertainment</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="field amenity-check">
+                            <div class="control">
+                                <label class="checkbox">
+                                    <input id="firepit" type="checkbox">Fire Pit</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="field amenity-check">
+                            <div class="control">
+                                <label class="checkbox">
+                                    <input id="florist" type="checkbox">Florist</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="field amenity-check">
+                            <div class="control">
+                                <label class="checkbox">
+                                    <input id="hospitality" type="checkbox">Hospitality</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="field amenity-check">
+                            <div class="control">
+                                <label class="checkbox">
+                                    <input id="kitchen" type="checkbox">Kitchen</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="field amenity-check">
+                            <div class="control">
+                                <label class="checkbox">
+                                    <input id="masterofceremony" type="checkbox">Master Of Ceremony</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="field amenity-check">
+                            <div class="control">
+                                <label class="checkbox">
+                                    <input id="dj" type="checkbox">DJ</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="field amenity-check">
+                            <div class="control">
+                                <label class="checkbox">
+                                    <input id="liveband" type="checkbox">Live Band</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="field amenity-check">
+                            <div class="control">
+                                <label class="checkbox">
+                                    <input id="parking" type="checkbox">Parking</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="field amenity-check">
+                            <div class="control">
+                                <label class="checkbox">
+                                    <input id="photobooth" type="checkbox">Photo Booth</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="field amenity-check">
+                            <div class="control">
+                                <label class="checkbox">
+                                    <input id="photographer" type="checkbox">Photographer</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="field amenity-check">
+                            <div class="control">
+                                <label class="checkbox">
+                                    <input id="pool" type="checkbox">Pool</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="field amenity-check">
+                            <div class="control">
+                                <label class="checkbox">
+                                    <input id="tablesandchairs" type="checkbox">Tables And Chairs</label>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
-        </div>
-        <div class="field">
-            <label class="label">City</label>
-            <div class="control has-icons-left has-icons-right">
-                <input id="city" class="city-input input" type="text" placeholder="City">
-                <span class="icon is-small is-left"></span>
-            </div>
-        </div>
-        <br>
-        <div class="field">
-            <label class="label">State</label>
-            <div class="select is-multiple">
-                <select id="state" multiple size="5">
-                    <option value="Choose State"><strong>Choose State</strong></option>
-                    <option value="Alabama">Alabama</option>
-                    <option value="Alaska">Alaska</option>
-                    <option value="Arizona">Arizona</option>
-                    <option value="Arkansas">Arkansas</option>
-                    <option value="California">California</option>
-                    <option value="Colorado">Colorado</option>
-                    <option value="Connecticut">Connecticut</option>
-                    <option value="Delaware">Delaware</option>
-                    <option value="Florida">Florida</option>
-                    <option value="Georgia">Georgia</option>
-                    <option value="Hawaii">Hawaii</option>
-                    <option value="Idaho">Idaho</option>
-                    <option value="Illinois">Illinois</option>
-                    <option value="Indiana">Indiana</option>
-                    <option value="Iowa">Iowa</option>
-                    <option value="Kansas">Kansas</option>
-                    <option value="Kentucky">Kentucky</option>
-                    <option value="Louisiana">Louisiana</option>
-                    <option value="Maine">Maine</option>
-                    <option value="Maryland">Maryland</option>
-                    <option value="Massachusetts">Massachusetts</option>
-                    <option value="Michigan">Michigan</option>
-                    <option value="Minnesota">Minnesota</option>
-                    <option value="Mississippi">Mississippi</option>
-                    <option value="Missouri">Missouri</option>
-                    <option value="Montana">Montana</option>
-                    <option value="Nebraska">Nebraska</option>
-                    <option value="Nevada">Nevada</option>
-                    <option value="New">New Hampshire</option>
-                    <option value="New">New Jersey</option>
-                    <option value="New">New Mexico</option>
-                    <option value="New">New York</option>
-                    <option value="North">North Carolina</option>
-                    <option value="North">North Dakota</option>
-                    <option value="Ohio">Ohio</option>
-                    <option value="Oklahoma">Oklahoma</option>
-                    <option value="Oregon">Oregon</option>
-                    <option value="Pennsylvania">Pennsylvania</option>
-                    <option value="Rhode">Rhode Island</option>
-                    <option value="South">South Carolina</option>
-                    <option value="South">South Dakota</option>
-                    <option value="Tennessee">Tennessee</option>
-                    <option value="Texas">Texas</option>
-                    <option value="Utah">Utah</option>
-                    <option value="Vermont">Vermont</option>
-                    <option value="Virginia">Virginia</option>
-                    <option value="Washington">Washington</option>
-                    <option value="West">West Virginia</option>
-                    <option value="Wisconsin">Wisconsin</option>
-                    <option value="Wyoming">Wyoming</option>
-                </select>
-            </div>
-        </div>
-        <div class="field">
-            <label class="label">Zip</label>
-            <div class="control has-icons-left has-icons-right">
-                <input id="zip" class="zip-input input" type="text" placeholder="Zip">
-                <span class="icon is-small is-left"></span>
-            </div>
-        </div>
-        <br>
-        <!-- Amenities -->
-        <p class="title-for-amenities-list"><b>Amenities Offered:</b></p>
-        <div class="flex-container">
-            <div class="field amenity-check">
-                <div class="control">
-                    <label class="checkbox">
-                        <input id="bar" type="checkbox">Bar</label>
-                </div>
-            </div>
-            <div class="field amenity-check">
-                <div class="control">
-                    <label class="checkbox">
-                        <input id="bathroom" type="checkbox">Bathroom</label>
-                </div>
-            </div>
-            <div class="field amenity-check">
-                <div class="control">
-                    <label class="checkbox">
-                        <input id="catering" type="checkbox">Catering</label>
-                </div>
-            </div>
-            <div class="field amenity-check">
-                <div class="control">
-                    <label class="checkbox">
-                        <input id="changingroom" type="checkbox">Changing Room</label>
-                </div>
-            </div>
-            <div class="field amenity-check">
-                <div class="control">
-                    <label class="checkbox">
-                        <input id="dancefloor" type="checkbox">Dance Floor</label>
-                </div>
-            </div>
-            <div class="field amenity-check">
-                <div class="control">
-                    <label class="checkbox">
-                        <input id="decor" type="checkbox">Decor</label>
-                </div>
-            </div>
-            <div class="field amenity-check">
-                <div class="control">
-                    <label class="checkbox">
-                        <input id="entertainment" type="checkbox">Entertainment</label>
-                </div>
-            </div>
-            <div class="field amenity-check">
-                <div class="control">
-                    <label class="checkbox">
-                        <input id="firepit" type="checkbox">Fire Pit</label>
-                </div>
-            </div>
-            <div class="field amenity-check">
-                <div class="control">
-                    <label class="checkbox">
-                        <input id="florist" type="checkbox">Florist</label>
-                </div>
-            </div>
-            <div class="field amenity-check">
-                <div class="control">
-                    <label class="checkbox">
-                        <input id="hospitality" type="checkbox">Hospitality</label>
-                </div>
-            </div>
-            <div class="field amenity-check">
-                <div class="control">
-                    <label class="checkbox">
-                        <input id="kitchen" type="checkbox">Kitchen</label>
-                </div>
-            </div>
-            <div class="field amenity-check">
-                <div class="control">
-                    <label class="checkbox">
-                        <input id="masterofceremony" type="checkbox">Master Of Ceremony</label>
-                </div>
-            </div>
-            <div class="field amenity-check">
-                <div class="control">
-                    <label class="checkbox">
-                        <input id="dj" type="checkbox">DJ</label>
-                </div>
-            </div>
-            <div class="field amenity-check">
-                <div class="control">
-                    <label class="checkbox">
-                        <input id="liveband" type="checkbox">Live Band</label>
-                </div>
-            </div>
-            <div class="field amenity-check">
-                <div class="control">
-                    <label class="checkbox">
-                        <input id="parking" type="checkbox">Parking</label>
-                </div>
-            </div>
-            <div class="field amenity-check">
-                <div class="control">
-                    <label class="checkbox">
-                        <input id="photobooth" type="checkbox">Photo Booth</label>
-                </div>
-            </div>
-            <div class="field amenity-check">
-                <div class="control">
-                    <label class="checkbox">
-                        <input id="photographer" type="checkbox">Photographer</label>
-                </div>
-            </div>
-            <div class="field amenity-check">
-                <div class="control">
-                    <label class="checkbox">
-                        <input id="pool" type="checkbox">Pool</label>
-                </div>
-            </div>
-            <div class="field amenity-check">
-                <div class="control">
-                    <label class="checkbox">
-                        <input id="tablesandchairs" type="checkbox">Tables And Chairs</label>
-                </div>
-            </div>
-        </div>
-        <br>
-        <!-- Amenities End -->
-        <p class="title-for-amenities-list"><b>Upload an Image of your Venue</b></p>
-        <div class="file">
-            <label class="file-label">
-                <input id="address" class="file-input" type="file" name="listing">
-                <span class="file-cta">
+            <br>
+            <!-- Amenities End -->
+            <p class="title-for-amenities-list"><b>Upload an Image of your Venue</b></p>
+            <div class="file">
+                <label class="file-label">
+                    <input id="address" class="file-input" type="file" name="listing">
+                    <span class="file-cta">
                     <span class="file-icon">
                         <i class="fas fa-upload"></i>
                     </span>
-                <span class="file-label">File...</span>
-                </span>
-            </label>
-        </div>
-        <br>
-        <div class="field">
-            <div class="control">
-                <label class="checkbox">
-                    <input id="address" type="checkbox"> I agree to the <a href="#">terms and conditions</a>
+                    <span class="file-label">File...</span>
+                    </span>
                 </label>
             </div>
-        </div>
-        <div class="field is-grouped">
-            <div class="control">
-                <a href="#">
-                    <button id="submit-button" class="submit-button button is-link">Submit</button>
-                </a>
+            <br>
+            <div class="field">
+                <div class="control">
+                    <label class="checkbox">
+                        <input id="address" type="checkbox"> I agree to the <a href="#">terms and conditions</a>
+                    </label>
+                </div>
             </div>
-            <div class="control">
-                <button class="button is-text">Cancel</button>
+            <div class="field is-grouped">
+                <div class="control">
+                    <a href="#">
+                        <button id="submit-button" class="submit-button button is-link">Submit</button>
+                    </a>
+                </div>
+                <div class="control">
+                    <button class="button is-text">Cancel</button>
+                </div>
             </div>
         </div>
     </div>
