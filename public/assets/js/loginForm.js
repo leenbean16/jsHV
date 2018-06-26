@@ -13,8 +13,8 @@ $(".log-in-tab").on("click", function() {
 })
 
 
-$(".login-button").on("click", () => {
-        if (password === null) {
-            console.log("field is required.")
-        }
-})
+// $(".login-button").on("click", () => {
+//         if (password === null) {
+//             console.log("field is required.")
+//         }
+// })
