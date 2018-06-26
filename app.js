@@ -30,7 +30,7 @@ db.on("error", function(error) {
 // Routes
 // ======
 
-// Simple index route
+// index route
 app.get("/", function(req, res) {
   res.send(index.html);
 });
