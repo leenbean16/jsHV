@@ -5,6 +5,7 @@ body {
 .navbar {
     min-height: 3.25rem;
     background: #EEEEEE;
+    padding: 10px;
 }
 
 a.navbar-item,
@@ -170,4 +171,18 @@ div.level-left {
 
 .amenity-column {
     padding-top: 50px;
+}
+
+.zip-input {
+    width:200px;
+}
+
+#pac-input {
+    z-index: 0 !important;
+    position: absolute !important;
+    left: 200px !important;
+    top: 9px !important;
+    padding: 7.5px !important;
+    width: 500px;
+    border: 1px solid #000000;
 }
