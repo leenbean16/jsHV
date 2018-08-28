@@ -155,6 +155,7 @@ h1.title {
 .box {
     margin-top: 25px;
     box-shadow: none;
+    height: 40vw;
 }
 
 li {
